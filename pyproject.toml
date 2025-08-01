@@ -1,7 +1,7 @@
 # pyproject.toml
 [tool.poetry]
 name = "get-papers-list-job"
-version = "0.1.0"
+version = "0.1.1"
 description = "A tool to fetch PubMed papers with authors from pharma/biotech companies."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
