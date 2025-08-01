@@ -1,11 +1,14 @@
 # pyproject.toml
 [tool.poetry]
 name = "get-papers-list-job"
-version = "0.1.1"
+version = "0.1.2"
 description = "A tool to fetch PubMed papers with authors from pharma/biotech companies."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "papers_fetcher"}]
+packages = [
+    { include = "papers_fetcher" },
+    { include = "cli.py" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
