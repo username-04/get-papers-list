@@ -20,7 +20,7 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
 
 1.  **Clone the repository:**
     ```bash
-    git clone 
+    git clone https://github.com/username-04/get-papers-list.git
     cd get-papers-list
     ```
 
