@@ -1,0 +1,26 @@
+# pyproject.toml
+[tool.poetry]
+name = "get-papers-list-job"
+version = "0.1.0"
+description = "A tool to fetch PubMed papers with authors from pharma/biotech companies."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "papers_fetcher"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+typer = {extras = ["rich"], version = "^0.9.0"}
+lxml = "^5.1.0" # Note: lxml is faster than standard library xml but is not used in this example to keep dependencies light. The provided code uses the standard `xml` library. You can swap it in for a performance boost.
+rich = "^14.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# This section makes the `get-papers-list` command available after installation
+[tool.poetry.scripts]
+get-papers-list = "cli:app"
