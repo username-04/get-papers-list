@@ -1,7 +1,7 @@
 # pyproject.toml
 [tool.poetry]
 name = "get-papers-list-job"
-version = "0.2.0"
+version = "1.0.0"
 description = "A tool to fetch PubMed papers with authors from pharma/biotech companies."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
@@ -15,7 +15,7 @@ python = "^3.8"
 requests = "^2.31.0"
 typer = {extras = ["rich"], version = "^0.9.0"}
 click = "8.1.3"
-lxml = "4.9.3"  # Note: lxml is faster than standard library xml but is not used in this example to keep dependencies light. The provided code uses the standard `xml` library. You can swap it in for a performance boost.
+lxml = "^5.2.0"  # Note: lxml is faster than standard library xml but is not used in this example to keep dependencies light. The provided code uses the standard `xml` library. You can swap it in for a performance boost.
 rich = "13.7.1"
 
 [tool.poetry.group.dev.dependencies]
